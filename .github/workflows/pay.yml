@@ -1,0 +1,6 @@
+on: push
+jobs:
+  relay:
+    uses: letsbecool9792/sereno/.github/workflows/sereno-relay.yml@main
+    secrets:
+      RELAYER_KEY: ${{ secrets.SERENO_RELAYER_KEY }}
